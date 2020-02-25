@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation" app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment" android:name="org.d3if1079.praassesment.HomeFragment"
+              android:label="PraAssesment App">
+        <action android:id="@+id/action_homeFragment_to_persegiPanjangFragmen"
+                app:destination="@id/persegiPanjangFragmen"/>
+        <action android:id="@+id/action_homeFragment_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/persegiPanjangFragmen" android:name="org.d3if1079.praassesment.PersegiPanjangFragment"
+              android:label="PersegiPanjangFragmen"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if1079.praassesment.SegitigaFragment"
+              android:label="SegitigaFragment"/>
+</navigation>
